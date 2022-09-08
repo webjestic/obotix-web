@@ -49,17 +49,17 @@ npm run lint
 
 ## Docker
 ```bash
-docker build --build-arg env_target=PROD -t obotix-api:0.1.0 .
-docker build -t obotix-api:0.1.0 .
+docker build --build-arg env_target=PROD -t obotix-web:0.1.0 .
+docker build -t obotix-web:0.1.0 .
 docker images
-docker image tag d7fc432c2739 obotix-api:latest
-docker run -it obotix-api sh
+docker image tag b0f3201ae3c0 obotix-web:latest
+docker run -it obotix-web sh
 #             Local:Pod
-docker run -d -p 80:3000 --name oapi obotix-api npm start
+docker run -d -p 4000:8080 --name oweb obotix-web http-server dist
 docker ps
-docker exec oapi ls
-docker stop oapi
+docker exec oweb ls
+docker stop oweb
 docker ps -a
-docker start oapi
-docker rm -f oapi
+docker start oweb
+docker rm -f oweb
 ```
