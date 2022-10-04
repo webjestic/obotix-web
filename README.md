@@ -52,10 +52,10 @@ npm run lint
 docker build --build-arg env_target=PROD -t obotix-web:0.1.0 .
 docker build -t obotix-web:0.1.0 .
 docker images
-docker image tag b0f3201ae3c0 obotix-web:latest
+docker image tag c3c6bb78fb14 obotix-web:latest
 docker run -it obotix-web sh
 #             Local:Pod
-docker run -d -p 4000:8080 --name oweb obotix-web http-server dist
+docker run -d -p 4000:8080 --name oweb obotix-web
 docker ps
 docker exec oweb ls
 docker stop oweb
