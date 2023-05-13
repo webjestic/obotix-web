@@ -40,3 +40,7 @@ npm run preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+
+## YouTube
+
+[Ninja](https://www.youtube.com/watch?v=QS8MwC8S4o8&list=PL4cUxeGkcC9haQlqdCQyYmL_27TesCGPC&index=4)
